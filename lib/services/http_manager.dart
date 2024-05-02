@@ -35,13 +35,10 @@ class HttpManager {
         data: body,
       );
 
-      // Retorno do resultado do backend
       return response.data;
     } on DioError catch (error) {
-      // Retorno do erro do dio request
       return error.response?.data ?? {};
     } catch (error) {
-      // Retorno de map vazio para error generalizado
       return {};
     }
   }
