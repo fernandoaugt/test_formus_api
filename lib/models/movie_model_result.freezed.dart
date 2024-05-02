@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'film_model_result.dart';
+part of 'movie_model_result.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$FilmeResult<T> {
+mixin _$MovieResult<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(List<T> data) success,
@@ -57,16 +57,16 @@ mixin _$FilmeResult<T> {
 }
 
 /// @nodoc
-abstract class $FilmeResultCopyWith<T, $Res> {
-  factory $FilmeResultCopyWith(
-          FilmeResult<T> value, $Res Function(FilmeResult<T>) then) =
-      _$FilmeResultCopyWithImpl<T, $Res, FilmeResult<T>>;
+abstract class $MovieResultCopyWith<T, $Res> {
+  factory $MovieResultCopyWith(
+          MovieResult<T> value, $Res Function(MovieResult<T>) then) =
+      _$MovieResultCopyWithImpl<T, $Res, MovieResult<T>>;
 }
 
 /// @nodoc
-class _$FilmeResultCopyWithImpl<T, $Res, $Val extends FilmeResult<T>>
-    implements $FilmeResultCopyWith<T, $Res> {
-  _$FilmeResultCopyWithImpl(this._value, this._then);
+class _$MovieResultCopyWithImpl<T, $Res, $Val extends MovieResult<T>>
+    implements $MovieResultCopyWith<T, $Res> {
+  _$MovieResultCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -85,7 +85,7 @@ abstract class _$$SuccessImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$SuccessImplCopyWithImpl<T, $Res>
-    extends _$FilmeResultCopyWithImpl<T, $Res, _$SuccessImpl<T>>
+    extends _$MovieResultCopyWithImpl<T, $Res, _$SuccessImpl<T>>
     implements _$$SuccessImplCopyWith<T, $Res> {
   __$$SuccessImplCopyWithImpl(
       _$SuccessImpl<T> _value, $Res Function(_$SuccessImpl<T>) _then)
@@ -120,7 +120,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   String toString() {
-    return 'FilmeResult<$T>.success(data: $data)';
+    return 'MovieResult<$T>.success(data: $data)';
   }
 
   @override
@@ -204,7 +204,7 @@ class _$SuccessImpl<T> implements Success<T> {
   }
 }
 
-abstract class Success<T> implements FilmeResult<T> {
+abstract class Success<T> implements MovieResult<T> {
   factory Success(final List<T> data) = _$SuccessImpl<T>;
 
   List<T> get data;
@@ -224,7 +224,7 @@ abstract class _$$ErrorImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<T, $Res>
-    extends _$FilmeResultCopyWithImpl<T, $Res, _$ErrorImpl<T>>
+    extends _$MovieResultCopyWithImpl<T, $Res, _$ErrorImpl<T>>
     implements _$$ErrorImplCopyWith<T, $Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl<T> _value, $Res Function(_$ErrorImpl<T>) _then)
@@ -254,7 +254,7 @@ class _$ErrorImpl<T> implements Error<T> {
 
   @override
   String toString() {
-    return 'FilmeResult<$T>.error(message: $message)';
+    return 'MovieResult<$T>.error(message: $message)';
   }
 
   @override
@@ -337,7 +337,7 @@ class _$ErrorImpl<T> implements Error<T> {
   }
 }
 
-abstract class Error<T> implements FilmeResult<T> {
+abstract class Error<T> implements MovieResult<T> {
   factory Error(final String message) = _$ErrorImpl<T>;
 
   String get message;
