@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:test_formus_api/controller/home_controller.dart';
-import 'package:test_formus_api/view/home/home.dart';
+import 'package:test_formus_api/helper/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +14,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'Formus Filmes',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        textTheme: GoogleFonts.urbanistTextTheme(),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      defaultTransition: Transition.rightToLeft,
+      initialRoute: PagesRoutes.home,
+      getPages: Pages.routes,
     );
   }
 }

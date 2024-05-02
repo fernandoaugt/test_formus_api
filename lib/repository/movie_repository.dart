@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:test_formus_api/helper/endpoints.dart';
 import 'package:test_formus_api/models/movie_model.dart';
 import 'package:test_formus_api/models/movie_model_result.dart';
@@ -22,10 +20,9 @@ class MoviesRepository {
               .map(MovieModel.fromJson)
               .toList();
 
-      log(data.toString());
       return MovieResult<MovieModel>.success(data);
     } else {
-      return MovieResult.error("erro ao recuperar categorias");
+      return MovieResult.error("Erro ao recuperar Filmes");
     }
   }
 }
