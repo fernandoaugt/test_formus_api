@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:test_formus_api/repository/film_manager.dart';
 import 'package:test_formus_api/view/home/home.dart';
 
 void main() {
   runApp(const MyApp());
+
+  FilmManager().getFilms();
 }
 
 class MyApp extends StatelessWidget {
